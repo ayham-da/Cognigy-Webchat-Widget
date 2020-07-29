@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cognigy pizza</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
+    
+</head>
+
+
+<body>
+    <!-- <script src="./persistent-menu.webchat-plugin.js"></script> -->
+    
+    <script src="./webchat.js"></script>
+    <script>
+        initWebchat('https://endpoint-internal.cognigy.ai/dd4386822f75b69c41548e684f8bb977c9ed4d22fe3212222b2fd9c872b6f570', {
+            
+            settings: {
+            //   colorScheme: '#FAB'
+            }
+        }).then(webchat => {
+            window.cognigyWebchat = webchat;
+            // webchat.open();
+        });
+    </script>
+</body>
+
+</html>
